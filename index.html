@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+      <Section class="piano">
+
+          <section class="tapa"> <h1>Piano en html, css y un poquito de Javascript <span>- by Mateo Sánchez</span></h1></section>
+          <section class="teclado">
+              <button data-key="C" class="tecla WhiteBtn">C</button>
+              <button data-key="C" class="tecla blackBtn">C#</button>
+              <button data-key="D" class="tecla WhiteBtn">D</button>
+              <button data-key="D" class="tecla blackBtn">D#</button>
+              <button data-key="E" class="tecla WhiteBtn">E</button>
+              <button data-key="F" class="tecla WhiteBtn">F</button>
+              <button data-key="F" class="tecla blackBtn">F#</button>
+              <button data-key="G" class="tecla WhiteBtn">G</button>
+              <button data-key="G" class="tecla blackBtn">G#</button>
+              <button data-key="A" class="tecla WhiteBtn">A</button>
+              <button data-key="A" class="tecla blackBtn">A#</button>
+              <button data-key="C" class="tecla WhiteBtn">B</button>
+            </section>
+        </Section>
+        <audio src="/sounds/C.mp3" id="C"></audio>
+        <audio src="/sounds/C#.mp3" id="C#" ></audio>
+        <audio src="/sounds/D.mp3" id="D"></audio>
+        <audio src="/sounds/D#.mp3" id="D#"></audio>
+        <audio src="/sounds/E.mp3" id="E"></audio>
+        <audio src="/sounds/F.mp3" id="F"></audio>
+        <audio src="/sounds/F#.mp3" id="F#"></audio>
+        <audio src="/sounds/G.mp3" id="G"></audio>
+        <audio src="/sounds/G#.mp3" id="G#"></audio>
+        <audio src="/sounds/A.mp3" id="A"></audio>
+        <audio src="/sounds/A#.mp3" id="A#"></audio>
+        <audio src="/sounds/B.mp3" id="B"></audio>
+
+        <div class="container">
+            <span style="--i: 20" class="burbuja"></span>
+            <span style="--i: 15" class="burbuja"></span>
+            <span style="--i: 23" class="burbuja"></span>
+            <span style="--i: 18" class="burbuja"></span>
+            <span style="--i: 28" class="burbuja"></span>
+            <span style="--i: 10" class="burbuja"></span>
+            <span style="--i: 17" class="burbuja"></span>
+            <span style="--i: 32" class="burbuja"></span>
+            <span style="--i: 25" class="burbuja"></span>
+            <span style="--i: 11" class="burbuja"></span>
+            <span style="--i: 8" class="burbuja"></span>
+            <span style="--i: 29" class="burbuja"></span>
+            <span style="--i: 16" class="burbuja"></span>
+            <span style="--i: 10" class="burbuja"></span>
+            <span style="--i: 24" class="burbuja"></span>
+            <span style="--i: 10" class="burbuja"></span>
+            <span style="--i: 22" class="burbuja"></span>
+            <span style="--i: 14" class="burbuja"></span>
+            <span style="--i: 35" class="burbuja"></span>
+            <span style="--i: 10" class="burbuja"></span>
+            <span style="--i: 19" class="burbuja"></span>
+            <span style="--i: 23" class="burbuja"></span>
+        </div>
+  </body>
+  <script src="script.js"></script>
+</html>
