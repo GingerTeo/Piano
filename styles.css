@@ -20,24 +20,23 @@ body {
   align-items: flex-start;
   padding: 20px;
   border-radius: 50px 50px 10px 10px;
-  box-shadow: 4px 4px 10px #333, 4px 4px 20px #333, inset 0px 60px 40px -10px ;
-  
+  box-shadow: 4px 4px 10px #333, 4px 4px 20px #333, inset 0px 60px 40px -10px;
 }
 .tapa {
-    position: absolute;
-    z-index: 20;
-    width: 700px;
-    height: 50px;
-    background-color: #a7675c;
-    border-radius: 50px 50px 0px 0px;
-    text-align: center;
-    padding: 8px;
-    color: rgb(179, 233, 215);
-    text-shadow: 0 2px 4px #333;
+  position: absolute;
+  z-index: 20;
+  width: 700px;
+  height: 50px;
+  background-color: #a7675c;
+  border-radius: 50px 50px 0px 0px;
+  text-align: center;
+  padding: 8px;
+  color: rgb(179, 233, 215);
+  text-shadow: 0 2px 4px #333;
 }
 .tapa span {
-    font-size: 0.8rem;
-    color: white;
+  font-size: 0.8rem;
+  color: white;
 }
 .tecla {
   padding-bottom: 10px;
@@ -67,55 +66,66 @@ body {
 }
 
 .tecla:active {
-    box-shadow: 0 0 0 0 ;
-    transform: scale(0.95);
-    animation: animate 200ms linear;
+  box-shadow: 0 0 0 0;
+  transform: scale(0.95);
+  animation: animate 200ms linear;
 }
 @keyframes animate {
-    0% {
-        background-color: aquamarine;
-    }
-    
+  0% {
+    background-color: aquamarine;
+  }
 }
 @media screen and (max-width: 710px) {
-    .teclado, .tapa {
-        width: 90vw;
-        min-width: 320px;
-        gap: 5px;
+  .teclado,
+  .tapa {
+    width: 90vw;
+    min-width: 320px;
+    gap: 5px;
+  }
+  .tapa {
+      line-height: 20px;
+      padding: 4px 36px;
+  }
+  
+}
+@media screen and (max-width: 490px) {
+    .tapa span {
+        display: none;
     }
 }
 
 /* Burbujas */
 
 .container {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: -10;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .burbuja {
-    width: 20px;
-    height: 20px;
-    background-color: aqua;
-    animation: bubble 10s linear infinite;
-    animation-duration: calc(100s / var(--i));
-    border-radius: 50%;
-    box-shadow: 0 0 10px lightseagreen, 0 0 50px lightseagreen, 0 0 100px lightseagreen;
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+  animation: bubble 10s linear infinite;
+  animation-duration: calc(100s / var(--i));
+  border-radius: 50%;
+  box-shadow: 0 0 10px lightseagreen, 0 0 50px lightseagreen,
+    0 0 100px lightseagreen;
 }
 .burbuja:nth-child(even) {
-    background-color: rgb(113, 150, 184);
+  background-color: rgb(113, 150, 184);
 }
 
 @keyframes bubble {
-    0% {
-        transform: translateY(0vh) scale(0);
-    }
-    100% {
-        transform: translateY(-130vh) scale(1.5);
-    }
+  0% {
+    transform: translateY(0vh) scale(0);
+  }
+  100% {
+    transform: translateY(-130vh) scale(1.5);
+  }
 }
